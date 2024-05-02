@@ -25,18 +25,6 @@
     },
     {
       "volonter": {
-        "ime": "Ana",
-        "prezime": "Barić",
-        "mjesto": "Kaštela",
-        "zanimacija": "Okoliš",
-        "mail": "anabaric@gmail.com",
-        "spol": "Ž"
-      },
-      "id": "3",
-      "ocjena": 2.5
-    },
-    {
-      "volonter": {
         "ime": "Iva",
         "prezime": "Žilić",
         "mjesto": "Solin",
@@ -45,7 +33,7 @@
         "spol": "Ž"
       },
       "id": "7",
-      "ocjena": 4
+      "ocjena": 1
     },
     {
       "volonter": {
@@ -189,6 +177,18 @@
         "mail": "",
         "spol": ""
       }
+    },
+    {
+      "id": "abeb",
+      "volonter": {
+        "ime": "Mateo",
+        "prezime": "Čale",
+        "mjesto": "Brela",
+        "zanimacija": "Djeca",
+        "mail": "calemrale@gmail.com",
+        "spol": "M"
+      },
+      "ocjena": 4.5
     }
   ],
   "udruge": [
@@ -225,8 +225,8 @@
         "sluzbeno": true
       },
       "id": "3uuu",
-      "ocjena": 2.1425000000000005,
-      "brojOcjena": 10
+      "ocjena": 2.1750000000000003,
+      "brojOcjena": 11
     },
     {
       "udruga": {
@@ -237,8 +237,8 @@
         "sluzbeno": true
       },
       "id": "3u",
-      "ocjena": 2,
-      "brojOcjena": 4
+      "ocjena": 2.6,
+      "brojOcjena": 5
     }
   ],
   "mjesta": [
@@ -605,7 +605,8 @@
           "Ivan Doždor",
           "Ivan Doždor",
           "Martin Josipović",
-          "Filip Matić"
+          "Filip Matić",
+          "Marin Babić"
         ]
       },
       "id": "1a"
