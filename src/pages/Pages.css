@@ -1,0 +1,49 @@
+.home-container {
+    background: linear-gradient(to bottom, #4CAF50, #2E8B57);
+    color: #fff;
+    padding: 20px;
+    height: 100%;
+   
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .news-item {
+    background-color: orange;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .news-item h2 {
+    margin-top: 0;
+  }
+  
+ 
+
+.volonteri-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.udruge-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.udruga-container {
+  flex: 1 1 auto;
+  max-width: 100%;
+  padding: 5px;
+}

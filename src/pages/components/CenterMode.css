@@ -1,0 +1,11 @@
+img{
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.slika{
+  width: 200px;
+  height: auto;
+}

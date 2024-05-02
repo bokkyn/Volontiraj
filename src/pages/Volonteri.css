@@ -1,0 +1,41 @@
+.add-volonter-form {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+  }
+  
+  .add-volonter-form h2 {
+    margin-bottom: 10px;
+  }
+  
+  .add-volonter-form input[type="text"],
+  .add-volonter-form input[type="email"],
+  .add-volonter-form input[type="radio"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .add-volonter-form label {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .add-volonter-form button {
+    background-color: white;
+    color: orange;
+    border: 1px solid orange;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .add-volonter-form button:hover {
+    background-color: orange;
+    color: white;
+  }
+  

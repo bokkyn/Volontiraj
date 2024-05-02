@@ -1,0 +1,664 @@
+{
+  "volonteri": [
+    {
+      "volonter": {
+        "ime": "Filip",
+        "prezime": "Matić",
+        "mjesto": "Muć",
+        "zanimacija": "Razno",
+        "mail": "fillmat@hotmail.com",
+        "spol": "M"
+      },
+      "id": "1"
+    },
+    {
+      "volonter": {
+        "ime": "Marko",
+        "prezime": "Jokić",
+        "mjesto": "Dicmo",
+        "zanimacija": "Razno",
+        "mail": "markojokic27@gmail.com",
+        "spol": "M"
+      },
+      "id": "2",
+      "ocjena": 1.5
+    },
+    {
+      "volonter": {
+        "ime": "Ana",
+        "prezime": "Barić",
+        "mjesto": "Kaštela",
+        "zanimacija": "Okoliš",
+        "mail": "anabaric@gmail.com",
+        "spol": "Ž"
+      },
+      "id": "3",
+      "ocjena": 2.5
+    },
+    {
+      "volonter": {
+        "ime": "Iva",
+        "prezime": "Žilić",
+        "mjesto": "Solin",
+        "zanimacija": "Edukacija",
+        "mail": "iva.zilic@yahoo.com",
+        "spol": "Ž"
+      },
+      "id": "7",
+      "ocjena": 4
+    },
+    {
+      "volonter": {
+        "ime": "Ante",
+        "prezime": "Maras",
+        "mjesto": "Sinj",
+        "zanimacija": "Starije osobe",
+        "mail": "antemaras78@gmail.com",
+        "spol": "M"
+      },
+      "id": "8"
+    },
+    {
+      "volonter": {
+        "ime": "Matea",
+        "prezime": "Kovačević",
+        "mjesto": "Stobreč",
+        "zanimacija": "Razno",
+        "mail": "matea.kovacevic@hotmail.com",
+        "spol": "Ž"
+      },
+      "id": "9"
+    },
+    {
+      "volonter": {
+        "ime": "Marin",
+        "prezime": "Babić",
+        "mjesto": "Podstrana",
+        "zanimacija": "Djeca",
+        "mail": "marinbabic34@gmail.com",
+        "spol": "M"
+      },
+      "id": "10"
+    },
+    {
+      "volonter": {
+        "ime": "Jelena",
+        "prezime": "Milić",
+        "mjesto": "Klis",
+        "zanimacija": "Edukacija",
+        "mail": "jmilic@yahoo.com",
+        "spol": "Ž"
+      },
+      "id": "11"
+    },
+    {
+      "volonter": {
+        "ime": "Petar",
+        "prezime": "Radoš",
+        "mjesto": "Split",
+        "zanimacija": "Djeca",
+        "mail": "petarrados@gmail.com",
+        "spol": "M"
+      },
+      "id": "12"
+    },
+    {
+      "id": "5e57",
+      "volonter": {
+        "ime": "Ante",
+        "prezime": "Listeš",
+        "mjesto": "Split",
+        "zanimacija": "Djeca",
+        "mail": "antelija@gmail.com",
+        "spol": "M"
+      }
+    },
+    {
+      "id": "0073",
+      "volonter": {
+        "ime": "Antonio",
+        "prezime": "Ćelić",
+        "mjesto": "Sućuraj",
+        "zanimacija": "Okoliš",
+        "mail": "ludiantonio@gmail.com",
+        "spol": "M"
+      }
+    },
+    {
+      "id": "0f37",
+      "volonter": {
+        "ime": "Martin",
+        "prezime": "Josipović",
+        "mjesto": "Baška Voda",
+        "zanimacija": "Životinje",
+        "mail": "martin.josipovic44@gmail.com",
+        "spol": "M"
+      }
+    },
+    {
+      "id": "57f8",
+      "volonter": {
+        "ime": "Dora",
+        "prezime": "Sansević",
+        "mjesto": "Stari Grad",
+        "zanimacija": "Starije osobe",
+        "mail": "sdorsi@gmail.com",
+        "spol": "F"
+      }
+    },
+    {
+      "id": "5222",
+      "volonter": {
+        "ime": "Toni Pjero",
+        "prezime": "Radić",
+        "mjesto": "Trogir",
+        "zanimacija": "Starije osobe",
+        "mail": "tpr@gmail.com",
+        "spol": "M"
+      }
+    },
+    {
+      "id": "101c",
+      "volonter": {
+        "ime": "Dario",
+        "prezime": "Stojanac",
+        "mjesto": "Split",
+        "zanimacija": "Edukacija",
+        "mail": "dokisifilis@gmail.com",
+        "spol": "M"
+      }
+    },
+    {
+      "id": "e77e",
+      "volonter": {
+        "ime": "Ivan",
+        "prezime": "Doždor",
+        "mjesto": "Dugopolje",
+        "zanimacija": "Edukacija",
+        "mail": "dokadozdor@gmail.com",
+        "spol": "M"
+      }
+    },
+    {
+      "id": "bb87",
+      "volonter": {
+        "ime": "ss",
+        "prezime": "",
+        "mjesto": "Bol",
+        "zanimacija": "Starije osobe",
+        "mail": "",
+        "spol": ""
+      }
+    }
+  ],
+  "udruge": [
+    {
+      "udruga": {
+        "ime": "Udruga Mi",
+        "mjesto": "Split",
+        "image": "",
+        "mail": "mi.samo.mi@udrugami.com",
+        "sluzbeno": true
+      },
+      "id": "1u",
+      "ocjena": 3.4375,
+      "brojOcjena": 8
+    },
+    {
+      "udruga": {
+        "ime": "Udruga MoSt",
+        "mjesto": "Split",
+        "image": "",
+        "mail": "most@most.com",
+        "sluzbeno": true
+      },
+      "id": "2u",
+      "ocjena": 4,
+      "brojOcjena": 4
+    },
+    {
+      "udruga": {
+        "ime": "Studentski Katolički Centar",
+        "mjesto": "Split",
+        "image": "",
+        "mail": "skac@skac.com",
+        "sluzbeno": true
+      },
+      "id": "3uuu",
+      "ocjena": 2.1425000000000005,
+      "brojOcjena": 10
+    },
+    {
+      "udruga": {
+        "ime": "LGBTQ+ Centar",
+        "mjesto": "Cista Provo",
+        "image": "",
+        "mail": "homo@homo.com",
+        "sluzbeno": true
+      },
+      "id": "3u",
+      "ocjena": 2,
+      "brojOcjena": 4
+    }
+  ],
+  "mjesta": [
+    {
+      "mjesto": {
+        "ime": "Hvar"
+      },
+      "id": "1"
+    },
+    {
+      "mjesto": {
+        "ime": "Imotski"
+      },
+      "id": "2"
+    },
+    {
+      "mjesto": {
+        "ime": "Kaštela"
+      },
+      "id": "3"
+    },
+    {
+      "mjesto": {
+        "ime": "Komiža"
+      },
+      "id": "4"
+    },
+    {
+      "mjesto": {
+        "ime": "Makarska"
+      },
+      "id": "5"
+    },
+    {
+      "mjesto": {
+        "ime": "Omiš"
+      },
+      "id": "6"
+    },
+    {
+      "mjesto": {
+        "ime": "Sinj"
+      },
+      "id": "7"
+    },
+    {
+      "mjesto": {
+        "ime": "Solin"
+      },
+      "id": "8"
+    },
+    {
+      "mjesto": {
+        "ime": "Split"
+      },
+      "id": "9"
+    },
+    {
+      "mjesto": {
+        "ime": "Stari Grad"
+      },
+      "id": "10"
+    },
+    {
+      "mjesto": {
+        "ime": "Supetar"
+      },
+      "id": "11"
+    },
+    {
+      "mjesto": {
+        "ime": "Trilj"
+      },
+      "id": "12"
+    },
+    {
+      "mjesto": {
+        "ime": "Trogir"
+      },
+      "id": "13"
+    },
+    {
+      "mjesto": {
+        "ime": "Vis"
+      },
+      "id": "14"
+    },
+    {
+      "mjesto": {
+        "ime": "Vrgorac"
+      },
+      "id": "15"
+    },
+    {
+      "mjesto": {
+        "ime": "Vrlika"
+      },
+      "id": "16"
+    },
+    {
+      "mjesto": {
+        "ime": "Baška Voda"
+      },
+      "id": "17"
+    },
+    {
+      "mjesto": {
+        "ime": "Bol"
+      },
+      "id": "18"
+    },
+    {
+      "mjesto": {
+        "ime": "Brela"
+      },
+      "id": "19"
+    },
+    {
+      "mjesto": {
+        "ime": "Cista Provo"
+      },
+      "id": "20"
+    },
+    {
+      "mjesto": {
+        "ime": "Dicmo"
+      },
+      "id": "21"
+    },
+    {
+      "mjesto": {
+        "ime": "Dugi Rat"
+      },
+      "id": "22"
+    },
+    {
+      "mjesto": {
+        "ime": "Dugopolje"
+      },
+      "id": "23"
+    },
+    {
+      "mjesto": {
+        "ime": "Gradac"
+      },
+      "id": "24"
+    },
+    {
+      "mjesto": {
+        "ime": "Hrvace"
+      },
+      "id": "25"
+    },
+    {
+      "mjesto": {
+        "ime": "Jelsa"
+      },
+      "id": "26"
+    },
+    {
+      "mjesto": {
+        "ime": "Klis"
+      },
+      "id": "27"
+    },
+    {
+      "mjesto": {
+        "ime": "Lećevica"
+      },
+      "id": "28"
+    },
+    {
+      "mjesto": {
+        "ime": "Lokvičići"
+      },
+      "id": "29"
+    },
+    {
+      "mjesto": {
+        "ime": "Lovreć"
+      },
+      "id": "30"
+    },
+    {
+      "mjesto": {
+        "ime": "Marina"
+      },
+      "id": "31"
+    },
+    {
+      "mjesto": {
+        "ime": "Milna"
+      },
+      "id": "32"
+    },
+    {
+      "mjesto": {
+        "ime": "Muć"
+      },
+      "id": "33"
+    },
+    {
+      "mjesto": {
+        "ime": "Nerežišća"
+      },
+      "id": "34"
+    },
+    {
+      "mjesto": {
+        "ime": "Okrug"
+      },
+      "id": "35"
+    },
+    {
+      "mjesto": {
+        "ime": "Otok"
+      },
+      "id": "36"
+    },
+    {
+      "mjesto": {
+        "ime": "Podbablje"
+      },
+      "id": "37"
+    },
+    {
+      "mjesto": {
+        "ime": "Podgora"
+      },
+      "id": "38"
+    },
+    {
+      "mjesto": {
+        "ime": "Podstrana"
+      },
+      "id": "39"
+    },
+    {
+      "mjesto": {
+        "ime": "Postira"
+      },
+      "id": "40"
+    },
+    {
+      "mjesto": {
+        "ime": "Prgomet"
+      },
+      "id": "41"
+    },
+    {
+      "mjesto": {
+        "ime": "Primorski Dolac"
+      },
+      "id": "42"
+    },
+    {
+      "mjesto": {
+        "ime": "Proložac"
+      },
+      "id": "43"
+    },
+    {
+      "mjesto": {
+        "ime": "Pučišća"
+      },
+      "id": "44"
+    },
+    {
+      "mjesto": {
+        "ime": "Runovići"
+      },
+      "id": "45"
+    },
+    {
+      "mjesto": {
+        "ime": "Seget"
+      },
+      "id": "46"
+    },
+    {
+      "mjesto": {
+        "ime": "Selca"
+      },
+      "id": "47"
+    },
+    {
+      "mjesto": {
+        "ime": "Sućuraj"
+      },
+      "id": "48"
+    },
+    {
+      "mjesto": {
+        "ime": "Sutivan"
+      },
+      "id": "49"
+    },
+    {
+      "mjesto": {
+        "ime": "Šestanovac"
+      },
+      "id": "50"
+    },
+    {
+      "mjesto": {
+        "ime": "Šolta"
+      },
+      "id": "51"
+    },
+    {
+      "mjesto": {
+        "ime": "Tučepi"
+      },
+      "id": "52"
+    },
+    {
+      "mjesto": {
+        "ime": "Zadvarje"
+      },
+      "id": "53"
+    },
+    {
+      "mjesto": {
+        "ime": "Zagvozd"
+      },
+      "id": "54"
+    },
+    {
+      "mjesto": {
+        "ime": "Zmijavci"
+      },
+      "id": "55"
+    }
+  ],
+  "akcije": [
+    {
+      "akcija": {
+        "ime": "Čišćenje",
+        "mjesto": "Split",
+        "pocetak": "2019-01-01",
+        "kraj": "2019-01-01",
+        "opis": "Opis akcija",
+        "organizator": "",
+        "volonteri": [
+          "Marko Jokić",
+          "Martin Josipović",
+          "Dario Stojanac",
+          "Ante Listeš",
+          "Toni Pjero Radić",
+          "Dora Sansević"
+        ]
+      },
+      "id": "1aa"
+    },
+    {
+      "akcija": {
+        "ime": "Postavljanje pederskih zastava",
+        "mjesto": "Split",
+        "pocetak": "2019-01-01",
+        "kraj": "2019-01-01",
+        "organizator": "",
+        "opis": "Opis akcija",
+        "volonteri": [
+          "Ivan Doždor",
+          "Ivan Doždor",
+          "Martin Josipović",
+          "Filip Matić"
+        ]
+      },
+      "id": "1a"
+    },
+    {
+      "id": "1329",
+      "akcija": {
+        "ime": "Skupljanje Govana",
+        "mjesto": "Vrlika",
+        "pocetak": "2024-05-15",
+        "organizator": "",
+        "kraj": "2024-05-26",
+        "opis": "Rupa",
+        "volonteri": []
+      }
+    }
+  ],
+  "zanimacije": [
+    {
+      "zanimacija": {
+        "ime": "Životinje"
+      },
+      "id": "1"
+    },
+    {
+      "zanimacija": {
+        "ime": "Starije osobe"
+      },
+      "id": "3"
+    },
+    {
+      "zanimacija": {
+        "ime": "Djeca"
+      },
+      "id": "3"
+    },
+    {
+      "zanimacija": {
+        "ime": "Okoliš"
+      },
+      "id": "4"
+    },
+    {
+      "zanimacija": {
+        "ime": "Edukacija"
+      },
+      "id": "5"
+    },
+    {
+      "zanimacija": {
+        "ime": "Razno"
+      },
+      "id": "6"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+.udruge-container-ne-pr {
+  background-color: rgb(66, 72, 67);
+  opacity: 70%;
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.udruge-info {
+  text-align: center;
+}
+
+.udruge-info h2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
