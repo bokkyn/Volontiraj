@@ -33,18 +33,21 @@ else if(a=="user"){
   }
 
   return (
+    <div className="navbar">
     <nav className="nav">
       <Link to="/" className="site-title">
         VOLONTIRAJ!
       </Link>
       <ul>
-        <CustomLink to="/akcije">Akcije</CustomLink>
-        <CustomLink to="/volonteri">Volonteri</CustomLink>
+        <CustomLink className="a" to="/akcije">Akcije</CustomLink>
+        <CustomLink className="a"to="/volonteri">Volonteri</CustomLink>
         <CustomLink to="/udruge">Udruge</CustomLink>
         <CustomLink to="/kontakt">Kontakt</CustomLink>
         <CustomLink to="/login">{NavBarText(userType)}</CustomLink>
       </ul>
     </nav>
+    </div>
+
   );
 }
 

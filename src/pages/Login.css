@@ -1,56 +1,93 @@
+.home-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .form {
-    padding: 20px;
-    background: #ff5722;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    border-radius: 5px;
-    border: 2px solid #cddc39;
-    box-shadow: 4px 4px #cddc39;
-    max-width: 400px;
-    margin: 0 auto;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #48bb78;
+  background: -webkit-linear-gradient(to right, #2c7a39, #48bb78);
+  background: linear-gradient(to right, #2c7a39, #48bb78);
   
-  .title {
-    color: #4caf50;
-    font-weight: 900;
-    font-size: 20px;
-    margin-bottom: 25px;
-  }
-  
-  .title span {
-    color: #8bc34a;
-    font-weight: 600;
-    font-size: 17px;
-  }
-  
-  .input, .button-confirm {
-    width: 100%;
-    max-width: 250px;
-    height: 40px;
-    border-radius: 5px;
-    border: 2px solid #ff5722;
-    background-color: #ffee58;
-    box-shadow: 4px 4px #ff5722;
-    font-size: 15px;
-    font-weight: 600;
-    color: #4caf50;
-    padding: 5px 10px;
-    outline: none;
-  }
-  
-  .input::placeholder {
-    color: #8bc34a;
-    opacity: 0.8;
-  }
-  
-  .input:focus {
-    border: 2px solid #ff9800;
-  }
-  
-  .button-confirm:active {
-    box-shadow: 0px 0px #ff5722;
-    transform: translate(3px, 3px);
-  }
-  
+  padding: 30px;
+  width: 450px;
+  border-radius: 20px;
+}
+
+.form button {
+  align-self: flex-end;
+}
+
+.flex-column > label {
+  color: #151717;
+  font-weight: 600;
+}
+
+.inputForm {
+  border: 1.5px solid #000000;
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.input {
+  background-color: transparent;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 85%;
+  height: 100%;
+}
+.input:focus {
+  outline: none; 
+  border-color: #000000;
+  transition: none; 
+}
+::placeholder{
+  color: #000000;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.flex-row > div > label {
+  font-size: 14px;
+  color: black;
+  font-weight: 400;
+}
+
+
+.button-submit {
+  margin: 20px 0 10px 0;
+  background-color: #151717;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: #252727;
+}
+
+.span,.p {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+    
