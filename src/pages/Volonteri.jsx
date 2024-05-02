@@ -109,9 +109,9 @@ const sortByCity = () => {
 };
 
 
-  const filterByZanimacija = (zanimacija) => {
-    setSelectedZanimacija(zanimacija);
-  };
+const filterByZanimacija = (zanimacija) => {
+  setSelectedZanimacija(zanimacija);
+};
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
@@ -178,7 +178,7 @@ const sortByCity = () => {
         />
       </div>
       <div className="volonteri-container">
-        {filteredVolonteri.map(volonter => (
+        {filteredVolonteri.filter(volonter => !selectedZanimacija || volonter.volonter.zanimacija === selectedZanimacija).map(volonter => (
           <UserContainer
             key={volonter.id}
             image={`https://xsgames.co/randomusers/avatar.php?g=${volonter.volonter && volonter.volonter.spol === 'M' ? 'male' : 'female'}&email=${encodeURIComponent(volonter.volonter && volonter.volonter.mail)}`}
@@ -287,7 +287,7 @@ const sortByCity = () => {
           value={selectedZanimacija}
           onChange={(e) => filterByZanimacija(e.target.value)}
         >
-          <option value="">Svi</option>
+          <option value="">All</option>
           {zanimacije.map(zanimacija => (
             <option key={zanimacija.id} value={zanimacija.zanimacija.ime}>
               {zanimacija.zanimacija.ime}
