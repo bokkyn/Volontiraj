@@ -1,7 +1,7 @@
 .user-container {
   background: linear-gradient(to right, orange, #c0903d);
   width: 200px;
-  height: 250px;
+  height: fit-content;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -9,6 +9,7 @@
   justify-content: center;
   margin: 5px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  padding: 4px;
 }
 
   
@@ -19,6 +20,8 @@
     border: 5px solid white;
     margin-bottom: 10px;
   }
+
+
   
   .user-info {
     text-align: center;

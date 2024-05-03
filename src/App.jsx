@@ -1,4 +1,5 @@
 import Navbar from "./Navbar"
+import Footer from "./Footerr"
 import Akcije from "./pages/Akcije"
 import Home from "./pages/Home"
 import Kontakt from "./pages/Kontakt"
@@ -27,7 +28,7 @@ function App() {
          <Route path="/login" element={<Login />} />
        </Routes>
      </div>
-
+     <Footer />
      </UserProvider>
     
     </>

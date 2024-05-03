@@ -15,6 +15,7 @@
 .nav .site-title {
   color: var(--text-color);
   text-decoration: none;
+  margin-left: 10px;
 }
 
 .nav ul {
@@ -43,10 +44,10 @@
 
 
 :root {
-  --body-color: #283618; 
-  --text-color: #ffffff; 
-  --hover-color: #ffa62b; 
-  --accent-color: #ffa62b; 
+  --body-color: #1e3f20; 
+  --text-color: #b4c292; 
+  --hover-color: #ffffff; 
+  --accent-color: #d17a22; 
   --underline-thickness: 3px;
   
 }

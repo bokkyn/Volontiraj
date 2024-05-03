@@ -1,10 +1,11 @@
-.add-volonter-form {
+ .add-volonter-form {
     background-color: orange;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     margin: 0 auto;
     width: 300px;
+    height: fit-content;
   }
   
   .add-volonter-form h2 {
@@ -110,4 +111,7 @@
     transform: scale(0.9);
   }
 
-
+  .container > * {
+    /* Add any styles needed for the children elements */
+    margin-bottom: 10px; /* Adds spacing between children */
+  }
