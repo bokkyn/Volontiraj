@@ -6,7 +6,8 @@ import UdrugeContainerNePr from './components/UdrugeContainerNePr';
 import { useContext } from 'react';
 import UserContext from '../UserContext';
 import Rating from '@mui/material/Rating';
-
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 
 function Udruge() {
@@ -149,8 +150,23 @@ function Udruge() {
 
   return (
     <div className="home-container">
-      <div className="header">
-        <h1>Udruge</h1>
+      
+      <Popup
+    trigger={open => (
+      
+<h1>Udruge</h1>
+
+    
+    )}
+    on={['hover', 'focus']}
+    closeOnDocumentClick
+    position="left center"
+  >
+    <span> Logirajte se da registrirate udrugu. Admin prijavu treba prihvatiti. </span>
+  </Popup>
+
+
+      <div className="opcije">
         <div>
           <span>Sortiraj po:</span>
           <button onClick={() => handleSort('name')}>Ime</button>

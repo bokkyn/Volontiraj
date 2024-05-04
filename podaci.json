@@ -168,17 +168,6 @@
       }
     },
     {
-      "id": "bb87",
-      "volonter": {
-        "ime": "ss",
-        "prezime": "",
-        "mjesto": "Bol",
-        "zanimacija": "Starije osobe",
-        "mail": "",
-        "spol": ""
-      }
-    },
-    {
       "id": "abeb",
       "volonter": {
         "ime": "Mateo",
@@ -189,6 +178,28 @@
         "spol": "M"
       },
       "ocjena": 4.5
+    },
+    {
+      "id": "b96a",
+      "volonter": {
+        "ime": "Josip",
+        "prezime": "Vuković",
+        "mjesto": "Split",
+        "zanimacija": "Okoliš",
+        "mail": "josip@proton.com",
+        "spol": "M"
+      }
+    },
+    {
+      "id": "0225",
+      "volonter": {
+        "ime": "Josipa",
+        "prezime": "Bičanić",
+        "mjesto": "Omiš",
+        "zanimacija": "Starije osobe",
+        "mail": "ceca@gmail.com",
+        "spol": "F"
+      }
     }
   ],
   "udruge": [
@@ -641,7 +652,7 @@
       "zanimacija": {
         "ime": "Djeca"
       },
-      "id": "3"
+      "id": "7"
     },
     {
       "zanimacija": {

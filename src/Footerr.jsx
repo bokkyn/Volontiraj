@@ -8,12 +8,12 @@ const Footer = () => {
         <div className="footer-section">
           <h2 className="site-title">Volontiraj!</h2>
         </div>
-        <p>Stranica za volontere SDŽ.</p>
+        <p className='sredina'>Stranica za volontere SDŽ.</p>
         <div className="footer-section">
           <ul className="footer-nav">
             <li><a href="#">BOkkYN</a></li>
-            <li><a href="#">GITHUB</a></li>
-            <li><a href="#">LINKEDIN</a></li>
+            <li><a href="https://github.com/bokkyn">GITHUB</a></li>
+            <li><a href="https://www.linkedin.com/in/borna-goreta/">LINKEDIN</a></li>
           </ul>
         </div>
       </div>

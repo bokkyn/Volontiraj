@@ -170,6 +170,26 @@ const filterByZanimacija = (zanimacija) => {
         <h1>Volonteri</h1>
       </div>
       <div className="search">
+      <div className="filter-zanimacija">
+        <span>Filter:</span>
+        <select
+          value={selectedZanimacija}
+          onChange={(e) => filterByZanimacija(e.target.value)}
+        >
+          <option value="">All</option>
+          {zanimacije.map(zanimacija => (
+            <option key={zanimacija.id} value={zanimacija.zanimacija.ime}>
+              {zanimacija.zanimacija.ime}
+            </option>
+          ))}
+
+        </select>
+      </div>
+      <div className='opcije'>
+          <button onClick={sortBySurname}>Sortiraj po prezimenu {sortOrder.surname === 'asc' ? '▲' : '▼'}</button>
+          <button onClick={sortByCity}>Sortiraj po mjestu {sortOrder.city === 'asc' ? '▲' : '▼'}</button>
+        
+      
         <input
         className="search__input"
           type="text"
@@ -182,6 +202,7 @@ const filterByZanimacija = (zanimacija) => {
         </g>
     </svg>
       </div>
+      </div>
       <div className="volonteri-container">
         {filteredVolonteri.filter(volonter => !selectedZanimacija || volonter.volonter.zanimacija === selectedZanimacija).map(volonter => (
           <div>
@@ -193,15 +214,26 @@ const filterByZanimacija = (zanimacija) => {
             onClickDelete={() => handleDelete(volonter.id)}
             className="container"
           >
-                        <Rating 
-              name={`rating-${volonter.id}`} 
-              value={ratings[volonter.id] || 0} 
-              onChange={(event, newValue) => handleRatingChange(volonter.id, newValue)} 
-              precision={0.5}
-              disabled={userType !== 'admin'}/>
+
+
+      
+      <Rating 
+      name={`rating-${volonter.id}`} 
+      value={ratings[volonter.id] || 0} 
+      onChange={(event, newValue) => handleRatingChange(volonter.id, newValue)} 
+      precision={0.5}
+      disabled={userType !== 'admin'}/>
+
+    
+
+ 
+
+
+
+
               <br></br>
             <Popup
-              trigger={<button className="opsirnije-button"> Opširnije </button>}
+              trigger={<button className="opsirnije-button"> VIŠE </button>}
               modal
               nested
             >
@@ -227,7 +259,19 @@ const filterByZanimacija = (zanimacija) => {
         ))}
       </div>
       <div className="add-volonter-form">
-        <h2>PRIJAVI VOLONTERA</h2>
+        
+        <Popup
+    trigger={open => (
+      
+      <h2>PRIJAVI VOLONTERA</h2>
+    
+    )}
+    on={['hover', 'focus']}
+    closeOnDocumentClick
+    position="left center"
+  >
+    <span> Logiraj se kako bi dodao volontere! </span>
+  </Popup>
         {(userType=="user" || userType=="admin") && <form onSubmit={handleSubmit}>
           <input type="text" name="ime" placeholder="Ime" value={formData.ime} onChange={handleChange} required/>
           <input type="text" name="prezime" placeholder="Prezime" value={formData.prezime} onChange={handleChange} required />
@@ -285,25 +329,9 @@ const filterByZanimacija = (zanimacija) => {
           </div>
           <button type="submit">PRIJAVI VOLONTERA</button>
         </form>}
-        <div>
-          <button onClick={sortBySurname}>Sortiraj po prezimenu {sortOrder.surname === 'asc' ? '▲' : '▼'}</button>
-          <button onClick={sortByCity}>Sortiraj po mjestu {sortOrder.city === 'asc' ? '▲' : '▼'}</button>
-        </div>
+
       </div>
-      <div className="filter-zanimacija">
-        <h2>Filter:</h2>
-        <select
-          value={selectedZanimacija}
-          onChange={(e) => filterByZanimacija(e.target.value)}
-        >
-          <option value="">All</option>
-          {zanimacije.map(zanimacija => (
-            <option key={zanimacija.id} value={zanimacija.zanimacija.ime}>
-              {zanimacija.zanimacija.ime}
-            </option>
-          ))}
-        </select>
-      </div>
+
     </div>
   );
 }

@@ -177,6 +177,10 @@ const sortByCity = () => {
       <div className="header">
         <h1>Akcije</h1>
       </div>
+      <div className='opcije'>
+        <button onClick={SortByTime}>Poredaj po datumu {sortOrder.pocetak === 'asc' ? '▲' : '▼'}</button>
+        <button onClick={sortByCity}>Poredaj po gradu {sortOrder.city === 'asc' ? '▲' : '▼'}</button>
+      
       <div className="search">
         <input
         className="search__input"
@@ -190,6 +194,7 @@ const sortByCity = () => {
         </g>
     </svg>
       </div>
+      </div>
       <div className="akcije-container">
         {akcije && filteredAkcije.map(akcija => (
           <AkcijaContainer
@@ -200,7 +205,7 @@ const sortByCity = () => {
           >
             <p>{Label(akcija.akcija.pocetak,akcija.akcija.kraj)}</p>
             <Popup
-              trigger={<button className="button"> Opširnije </button>}
+              trigger={<button className="opsirnije-button"> VIŠE </button>}
               modal
               nested
             >
@@ -277,10 +282,7 @@ const sortByCity = () => {
 
         </div>
       }
-      <div>
-        <button onClick={SortByTime}>Poredaj po datumu {sortOrder.pocetak === 'asc' ? '▲' : '▼'}</button>
-        <button onClick={sortByCity}>Poredaj po gradu {sortOrder.city === 'asc' ? '▲' : '▼'}</button>
-      </div>
+
     </div>
   );
 }

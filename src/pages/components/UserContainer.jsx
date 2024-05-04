@@ -15,7 +15,7 @@ const { userType } = useContext(UserContext);
           <h2>{props.name}</h2>
           <p>{props.location}</p>
           {props.children}
-          {userType == "admin" && <button onClick={props.onClickDelete}>UKLONI</button>}
+          {userType == "admin" && <button className="remove-button" onClick={props.onClickDelete}><i class="gg-trash"></i></button>}
         </div>
       </div>
     </>

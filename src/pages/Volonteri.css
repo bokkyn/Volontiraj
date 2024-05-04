@@ -1,44 +1,8 @@
- .add-volonter-form {
-    background-color: orange;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 0 auto;
-    width: 300px;
-    height: fit-content;
-  }
-  
-  .add-volonter-form h2 {
-    margin-bottom: 10px;
-  }
-  
-  .add-volonter-form input[type="text"],
-  .add-volonter-form input[type="email"],
-  .add-volonter-form input[type="radio"] {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .add-volonter-form label {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .add-volonter-form button {
-    background-color: white;
-    color: orange;
-    border: 1px solid orange;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .add-volonter-form button:hover {
-    background-color: orange;
-    color: white;
-  }
+
+
+
+
+   /*--------------------modal----------------*/
   
   .modal, .popup-content {
     font-size: 12px;
@@ -85,33 +49,8 @@
     border: 1px solid #cfcece;
   }
 
-  .opsirnije-button{
-    position: relative;
-    display: inline-block;
-    padding: 2px 3px;
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: aqua;
-    background: greenyellow;
-    cursor: pointer;
-    transition: ease-out 0.5s;
-    border: 2px solid aqua;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 0 aqua;
-  }
-
-  .opsirnije-button:hover {
-    color: white;
-    box-shadow: inset 0 -100px 0 0 aqua;
-  }
-  
-  .opsirnije-button:active {
-    transform: scale(0.9);
-  }
+ /*--------------------modal kraj----------------*/
 
   .container > * {
-    /* Add any styles needed for the children elements */
-    margin-bottom: 10px; /* Adds spacing between children */
+    margin-bottom: 10px;
   }

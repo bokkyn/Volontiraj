@@ -43,7 +43,7 @@ else if(a=="user"){
         <CustomLink className="a"to="/volonteri">Volonteri</CustomLink>
         <CustomLink to="/udruge">Udruge</CustomLink>
         <CustomLink to="/kontakt">Kontakt</CustomLink>
-        <CustomLink to="/login">{NavBarText(userType)}</CustomLink>
+        <CustomLink id ="circled" to="/login">{NavBarText(userType)}</CustomLink>
       </ul>
     </nav>
     </div>

@@ -25,6 +25,9 @@
   padding: 10px;
 }
 
+#circled{
+color: #d17a22;
+}
 
 .nav ul li a {
   color: var(--text-color);

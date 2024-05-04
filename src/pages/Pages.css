@@ -3,7 +3,6 @@
     color: #fff;
     padding: 20px;
     height: 100%;
-   
   }
   
   .header {
@@ -39,17 +38,12 @@
 }
 .udruge-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
 }
-
-.udruga-container {
-  flex: 1 1 auto;
-  max-width: 100%;
-  padding: 5px;
-}
-
-
-
 
 .search {
   display: flex;
@@ -103,4 +97,136 @@
   height: 1.3em;
   width: 1.3em;
   fill: #b4b4b4;
+}
+
+
+
+.akcije-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.opsirnije-button{
+  position: relative;
+  display: inline-block;
+  padding: 2px 3px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+  background: #FFA500;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #228B22;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 aqua;
+}
+
+.opsirnije-button:hover {
+  color: #228B22;
+  background: #FFD700;
+  box-shadow: inset 0 -100px 0 0 #228B22;
+}
+
+.opsirnije-button:active {
+  transform: scale(0.9);
+}
+
+
+
+
+
+
+ 
+ .add-volonter-form, .add-akcija-form {
+  background-color: orange;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  width: 300px;
+  height: fit-content;
+}
+
+.add-volonter-form h2 {
+  margin-bottom: 10px;
+}
+
+.add-volonter-form input[type="text"],
+.add-volonter-form input[type="email"],
+.add-volonter-form input[type="radio"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.add-volonter-form label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.add-volonter-form button {
+  background-color: white;
+  color: orange;
+  border: 1px solid orange;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.add-volonter-form button:hover {
+  background-color: orange;
+  color: white;
+}
+
+
+
+
+
+
+
+.opcije{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+
+
+
+
+
+select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #d79625;
+  color: #333;
+  margin: 5px;
+}
+
+
+option {
+  padding: 5px;
+  font-size: 14px;
+  background-color: green;
+  color: #333;
+}
+
+
+select:hover {
+  border-color: #28a745;
+}
+
+
+select:focus {
+  color: #ffc107;
+  background-color: #28a745;
+  box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
 }

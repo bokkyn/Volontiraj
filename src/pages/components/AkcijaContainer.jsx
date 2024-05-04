@@ -8,11 +8,13 @@ function AkcijaContainer(props) {
   return (
     <>
       <div className="akcija-container">
-        <div className="akcija-info">
+        
           <h2>{props.name}</h2>
+          <div className="akcija-info">
           <p>{props.location}</p>
-          {userType=="admin" && <button onClick={props.onClickDelete}>UKLONI AKCIJU</button>}
           {props.children}
+          {userType=="admin" && <button className="remove-button" onClick={props.onClickDelete}>UKLONI AKCIJU</button>}
+          
         </div>
       </div>
     </>

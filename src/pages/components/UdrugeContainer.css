@@ -1,4 +1,4 @@
-.udruge-container {
+.udruga-container {
   background-color: rgb(9, 88, 24);
   width: 300px;
   height: 200px;
@@ -9,12 +9,16 @@
   justify-content: center;
 }
 
+.user-info h2 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 100%;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+}
+
 
 .udruge-info {
   text-align: center;
 }
 
-.udruge-info h2 {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
