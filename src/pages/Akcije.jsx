@@ -5,6 +5,8 @@ import AkcijaContainer from './components/AkcijaContainer';
 import UserContext from '../UserContext';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import Parallaxx from './components/Parallaxx';
+import jedan from "./components/assets/1.png"
 
 
 function Akcije() {
@@ -21,7 +23,8 @@ function Akcije() {
     pocetak: "",
     kraj: "",
     opis: "",
-    organizator: ""
+    organizator: "",
+    volonteri: []
   });
 
   const { userType } = useContext(UserContext);
@@ -80,7 +83,8 @@ function Akcije() {
           pocetak: "",
           kraj: "",
           opis: "",
-          organizator: ""
+          organizator: "",
+          volonteri: []
         });
       })
       .catch(error => {
@@ -174,12 +178,13 @@ const sortByCity = () => {
 }
   return (
     <div className="home-container">
+       <Parallaxx naslov="AKCIJE!" ratio="4/1" image={jedan}></Parallaxx>
       <div className="header">
         <h1>Akcije</h1>
       </div>
       <div className='opcije'>
-        <button onClick={SortByTime}>Poredaj po datumu</button>
-        <button onClick={sortByCity}>Poredaj po gradu</button>
+        <button onClick={SortByTime} className='sortiraj-button' >Sortiraj po datumu</button>
+        <button onClick={sortByCity} className='sortiraj-button' >Sortiraj po gradu</button>
       
       <div className="search">
         <input
@@ -188,11 +193,7 @@ const sortByCity = () => {
           placeholder="Pretraži po imenu"
           value={searchQuery}
           onChange={handleSearchChange}
-        /><svg className="search__icon" aria-hidden="true" viewBox="0 0 24 24">
-        <g>
-            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
-        </g>
-    </svg>
+        />
       </div>
       </div>
       <div className="akcije-container">
@@ -228,12 +229,12 @@ const sortByCity = () => {
               onChange={(e) => setValue(e.target.value)}
               style={{ width: '200px' }}
             >
-              <option value="">--Odaberi volontera--</option>
+              <option value="">Odaberi volontera</option>
               {volonteri.map(item => (
                 <option key={item.id}>{`${item.volonter.ime} ${item.volonter.prezime}`}</option>
               ))}
             </select>
-            <button onClick={() => addVolunteer(akcija.id, value)}>DODAJ VOLONTERA</button>
+            <button onClick={() => addVolunteer(akcija.id, value)} className='sortiraj-button'>DODAJ VOLONTERA</button>
                 </div>
               )}
             </Popup>
@@ -254,7 +255,7 @@ const sortByCity = () => {
               onChange={handleChange}
               required
             >
-              <option value=''>--Odaberi mjesto--</option>
+              <option value=''>Odaberi mjesto</option>
               {mjesta.map(mjesto => (
                 <option key={mjesto.id} value={mjesto.mjesto.ime}>
                   {mjesto.mjesto.ime}
@@ -269,7 +270,7 @@ const sortByCity = () => {
               onChange={handleChange}
               required
             >
-              <option value=''>--Odaberi organizatora--</option>
+              <option value=''>Odaberi organizatora</option>
               {organizatori.map(organizator => (
                 <option key={organizator.id} value={organizator.udruga.ime}>
                   {organizator.udruga.ime}
@@ -277,7 +278,7 @@ const sortByCity = () => {
               ))}
             </select>
 
-            <button type="submit">PRIJAVI AKCIJU</button>
+            <button type="submit" className='sortiraj-button'>PRIJAVI AKCIJU</button>
           </form>
 
         </div>

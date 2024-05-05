@@ -1,0 +1,33 @@
+
+
+
+.data{
+    background: #4ad454;
+    border-radius: 5px;
+    padding: 0 10px;
+
+
+
+font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+line-height: 12px;
+
+color: #000000;
+
+
+}
+
+.value{
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 15px;
+padding: 0px;
+color: #000;
+
+
+}
+
+

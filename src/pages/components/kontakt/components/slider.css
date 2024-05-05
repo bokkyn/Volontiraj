@@ -1,0 +1,41 @@
+.background{
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 3px 3px;
+    
+}
+
+.sliderBackgound{
+    background-color:  #313141;
+    border-radius: 10px;
+    height: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+.sliderForeground{
+    background-color: #FFC905;
+    border: 3px solid;
+    border-radius: 10px;
+    height: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.broj{
+    color: #22222E;
+    font-family: Arial;
+    font-weight: bold;
+    align-items: center;
+    padding-right: 3px;
+}
+
+.skill{
+    color: black;
+    font-family: Arial;
+}
+

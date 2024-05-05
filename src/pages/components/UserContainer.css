@@ -24,10 +24,10 @@
   .user-info h2 {
     font-weight: bold;
     margin-bottom: 5px;
-    width: 100%; /* Add this */
-    overflow: hidden; /* Add this */
-    text-overflow: ellipsis; /* Add this */
-    white-space: nowrap; /* Add this */
+    width: 100%; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
   }
 
   
@@ -45,7 +45,7 @@
   }
   
   .remove-button {
-    background-color: #FF6347; /* Red color */
+    background-color: #FF6347;
     color: white;
     border: none;
     border-radius: 5px;
@@ -54,14 +54,14 @@
   margin: 2px;
     font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out; /* Add animation to background color */
+    transition: background-color 0.3s ease-in-out;
   }
   
   .remove-button:hover {
-    background-color: #CD5C5C; /* Darker shade of red on hover */
+    background-color: #CD5C5C;
   }
   
   .remove-button:active {
-    transform: scale(0.95); /* Add slight scale-down effect when clicked */
+    transform: scale(0.95);
   }
   

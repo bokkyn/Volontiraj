@@ -8,6 +8,8 @@ import UserContext from '../UserContext';
 import Rating from '@mui/material/Rating';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import Parallaxx from './components/Parallaxx';
+import image from "./components/assets/2.jpg"
 
 
 function Udruge() {
@@ -151,10 +153,13 @@ function Udruge() {
   return (
     <div className="home-container">
       
+      <Parallaxx naslov="UDRUGE" ratio="4/1" image={image}></Parallaxx>
+      
       <Popup
     trigger={open => (
       
-<h1>Udruge</h1>
+<h1>Kako registrirati udrugu?</h1>
+
 
     
     )}
@@ -164,13 +169,13 @@ function Udruge() {
   >
     <span> Logirajte se da registrirate udrugu. Admin prijavu treba prihvatiti. </span>
   </Popup>
-
+  <p>Svaki prijavljeni građanin može poslati zahtjev za registracijom udruge. Nakon što ispuni sve podatke, prijava se šalje na odobrenje administratoru. </p>
+<p>Administrator može vidjeti sve prijave, te ih prihvatiti ili odbiti.</p>
 
       <div className="opcije">
         <div>
-          <span>Sortiraj po:</span>
-          <button onClick={() => handleSort('name')}>Ime</button>
-          <button onClick={() => handleSort('city')}>Mjesto</button>
+          <button onClick={() => handleSort('name')} className='sortiraj-button'>Sortiraj po imenu</button>
+          <button onClick={() => handleSort('city')} className='sortiraj-button'>Sortiraj po mjestu</button>
         </div>
       </div>
       <div className="udruge-container">
@@ -196,9 +201,9 @@ function Udruge() {
   ) : null
 ))}
       </div>
-
+      <br></br>
       {userType=="admin" && <div className="nesluzbene-udruge-container">
-        PRIJAVLJENE UDRUGE:
+ 
       {sortedUdruge.map(udruga => (
   !udruga.udruga.sluzbeno ? (
     <div key={udruga.id} className="nesluzbena-udruga-container">
@@ -212,7 +217,7 @@ function Udruge() {
   ) : null
 ))}
       </div>}
-
+  <br></br>
       {userType == "user" && 
       <div className="add-akcija-form">
         <h2>REGISTRIRAJ UDRUGU</h2>
@@ -225,18 +230,18 @@ function Udruge() {
             onChange={handleChange}
             required
           >
-            <option value=''>--Odaberi mjesto--</option>
+            <option value=''>Odaberi mjesto</option>
             {mjesta.map(mjesto => (
               <option key={mjesto.id} value={mjesto.mjesto.ime}>
                 {mjesto.mjesto.ime}
               </option>
             ))}
           </select>
-          <button type="submit">REGISTRIRAJ UDRUGU</button>
+          <button type="submit" className='sortiraj-button'>REGISTRIRAJ UDRUGU</button>
         </form>
       </div>
       }
-
+<br></br>
     </div>
   );
 }

@@ -4,6 +4,8 @@ import './Login.css';
 import UserContext from '../UserContext';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import Parallaxx from './components/Parallaxx';
+import jedan from "./components/assets/1.png"
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -52,6 +54,10 @@ function Login() {
 
   return (
     <div className="home-container">
+            <Parallaxx naslov="VOLONTIRAJ!" ratio="3/1" image={jedan}></Parallaxx>
+      
+      <br></br>
+      <br></br>
       <div className="header">
         <h2>PRIJAVA</h2>
       </div>
@@ -60,9 +66,7 @@ function Login() {
          
          
          <form className="form" onSubmit={handleLogin}>
-  <div className="title">
-    Dobrodošli<br />
-  </div>
+
   <div className="flex-column">
     <label>Email</label>
   </div>
@@ -80,14 +84,14 @@ function Login() {
   </div>
 
   <div className="flex-column">
-    <label>Password</label>
+    <label>Lozinka</label>
   </div>
   <div className="inputForm">
     <svg height="20" viewBox="-64 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"></path><path d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"></path></svg>
     <input 
       type="password" 
       className="input" 
-      placeholder="Password" 
+      placeholder="Lozinka" 
       name="password" 
       value={password} 
       onChange={(e) => setPassword(e.target.value)}
@@ -99,7 +103,7 @@ function Login() {
   <Popup
     trigger={open => (
       
-      <span className="span">Forgot password?</span>
+      <span className="span">Zaboravili ste lozinku?</span>
     
     )}
     on={['hover', 'focus']}
@@ -131,17 +135,26 @@ function Login() {
 
         </div>
       )}
-      {userType!=="logout" && (
-      <button className="button-logout" onClick={setUserAsLogout}>Odjavite se</button>
-      )
-      }
+
             {userType=="admin" && (
-      <p>Prijavljeni ste kao administrator! Sada uz pregled volontera, određene možete i brisati,
+              <div>
+ 
+
+      <br></br>
+      <p className='news-container'>Prijavljeni ste kao administrator! Sada uz pregled volontera, određene možete i brisati,
         ocijeniti, dodavati nove. Također, uz pregled akcija, neželjene možete ukloniti, a u akciju prijaviti članove
         koji su izrazili želju za sudjelovanjem.
         Ne zaboravite pogledati i sekciju "Udruge", gdje možete prihvatiti ili odbiti zahtjev za registracijom
         udruge koji su korisnici poslali.
       </p>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      
+      </div>
       )
       }
                   {userType=="user" && (
@@ -160,7 +173,12 @@ function Login() {
       </p>
       )
       }
-
+            {userType!=="logout" && (
+      <button className="sortiraj-button" onClick={setUserAsLogout}>Odjavite se</button>
+      )
+      }
+  <br></br>
+  <br></br>
 
     </div>
   );

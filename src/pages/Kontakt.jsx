@@ -1,13 +1,18 @@
 import './Pages.css'; 
 import Newsletter from './components/Newsletter';
+import CV from './components/kontakt/CV';
+
 function Kontakt() {
 
   return (
     <div className="home-container">
-      <div className="header">
-        <h1>Kontakt</h1>
-      </div>
+      
+
+      
+      <CV></CV>
+      <br></br>
       <Newsletter></Newsletter>
+      <br></br>
     </div>
   );
   }

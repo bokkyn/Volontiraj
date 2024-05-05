@@ -12,7 +12,8 @@ const Footer = () => {
         
         <div className="footer-section">
           <ul className="footer-nav">
-            <li><a href="#">BOkkYN</a></li>
+            <li><a href="https://www.dalmacija.hr">SDŽ</a></li>
+            <li>BOkkYN</li>
             <li><a href="https://github.com/bokkyn">GITHUB</a></li>
             <li><a href="https://www.linkedin.com/in/borna-goreta/">LINKEDIN</a></li>
           </ul>

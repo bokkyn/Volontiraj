@@ -9,10 +9,12 @@ import Login from "./pages/Login"
 import { Route, Routes } from "react-router-dom"
 import UserContext, { UserProvider } from './UserContext';
 import "./App.css"
+import { ParallaxProvider } from "react-scroll-parallax"
 
 function App() {
   return (
     <>
+    <ParallaxProvider>
      <UserProvider>
 
      <Navbar />
@@ -30,6 +32,7 @@ function App() {
      </div>
      <Footer />
      </UserProvider>
+     </ParallaxProvider>
     
     </>
   )

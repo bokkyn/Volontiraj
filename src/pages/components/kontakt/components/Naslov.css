@@ -1,0 +1,19 @@
+
+.naslov-container {
+    text-align: left;
+  }
+  
+  .naslov-heading {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    color: black;
+    margin:5px;
+  }
+  
+  .naslov-line {
+    width: 75%; 
+    height: 3px; 
+    background-color: black;
+     
+  }
+  

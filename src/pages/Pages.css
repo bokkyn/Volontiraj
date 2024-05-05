@@ -1,19 +1,33 @@
 .home-container {
     background: linear-gradient(to bottom, #4CAF50, #2E8B57);
     color: #fff;
-    padding: 20px;
+   
     height: 100%;
+    width: 100%;
+    padding-top: 30px;
   }
   
   .header {
     text-align: center;
     margin-bottom: 30px;
   }
+
+  .novosti{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   
   .news-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+    font-size: large;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
   }
   
   .news-item {
@@ -53,16 +67,14 @@
 }
 
 .search__input {
-  font-family: inherit;
-  font-size: inherit;
+ 
   background-color: #f4f2f2;
   border: none;
   color: #646464;
   padding: 0.7rem 1rem;
   border-radius: 30px;
-  width: 12em;
   transition: all ease-in-out .5s;
-  margin-right: -2rem;
+ 
 }
 
 .search__input:hover, .search__input:focus {
@@ -93,13 +105,6 @@
   cursor: pointer;
 }
 
-.search__icon {
-  height: 1.3em;
-  width: 1.3em;
-  fill: #b4b4b4;
-}
-
-
 
 .akcije-container{
   display: flex;
@@ -108,8 +113,9 @@
   align-items: center;
 }
 
-.opsirnije-button {
-  --color: #560bad;
+.opsirnije-button, .sortiraj-button {
+  background-color: orange;
+  --color: #2c7a39;
   font-family: inherit;
   display: inline-block;
   width: 60px;
@@ -117,14 +123,13 @@
   line-height: 1.5em;
   position: relative;
   overflow: hidden;
-  border: 2px solid var(--color);
-  transition: color .5s;
+  transition: color .3s;
   z-index: 1;
   font-size: 16px;
   margin: 2px;
   border-radius: 6px;
   font-weight: 500;
-  color: var(--color);
+  color: #000;
  }
  
  .opsirnije-button:before {
@@ -144,7 +149,7 @@
  .opsirnije-button:before {
   top: 100%;
   left: 100%;
-  transition: all .7s;
+  transition: all .3s;
  }
  
  .opsirnije-button:hover:before {
@@ -153,11 +158,46 @@
  }
  
  .opsirnije-button:active:before {
-  background: #3a0ca3;
+  background: #54c05b;
   transition: background 0s;
  }
 
+/*------------------------------*/
 
+
+
+.sortiraj-button {
+  background-color: orange;
+  --color: #2c7a39;
+  transition: color .3s;
+  z-index: 1;
+  margin: 2px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: #000;
+  white-space: nowrap;
+  width: fit-content;
+  border: solid black 2px;
+ }
+ 
+ .sortiraj-button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  border-radius: 50%;
+  white-space: nowrap;
+ }
+ 
+ .sortiraj-button:hover {
+  color: #fff;
+ }
+ 
+ 
+ 
+
+ /*------------------*/
  
  .add-volonter-form, .add-akcija-form {
   background: linear-gradient(to bottom, orange, #8b682c);
@@ -208,46 +248,61 @@
 
 
 .opcije{
+  background: orange;
+  width: 200px;
+  height: fit-content;
+  border-radius: 15px;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 50px;
+  justify-content: center;
+  margin: 5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+  gap: 15px;
 }
-
-.opcije button{
-  background-color: #28a745;
-}
-
-
 
 
 
 
 select {
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  background-color: #d79625;
-  color: #333;
-  margin: 5px;
+  background-color: orange;
+  --color: #2c7a39;
+  transition: color .3s;
+  z-index: 1;
+  margin: 2px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  white-space: nowrap;
+  width: fit-content;
+  height: 28px;
+  border: solid black 2px;
 }
 
 
 option {
   padding: 5px;
   font-size: 14px;
-  background-color: green;
-  color: #333;
 }
 
-
-select:hover {
-  border-color: #28a745;
+select::hover{
+  color: #fff;
 }
 
 
 select:focus {
-  color: #ffc107;
-  background-color: #28a745;
   box-shadow: 0 0 5px rgba(255, 193, 7, 0.5);
+}
+
+
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
 }

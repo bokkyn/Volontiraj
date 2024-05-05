@@ -1,0 +1,17 @@
+.naslov{
+    font-size: 700%;
+    font-weight: 900;
+    border: solid white 5px;
+    padding: 5px;
+    text-shadow: orange 5px;
+}
+.slow{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+.banner{
+    width: 100%;
+}
+

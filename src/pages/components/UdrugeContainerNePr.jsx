@@ -10,8 +10,8 @@ function UdrugeContainer(props) {
           <p>{props.mjesto}</p>
         </div>
         {props.children}
-      <button onClick={props.onClickDelete}>UKLONI</button>
-     <button onClick={props.onClickPrihvati}>PRIHVATI</button>
+      <button onClick={props.onClickDelete} className="remove-button">UKLONI</button>
+     <button onClick={props.onClickPrihvati} className="sortiraj-button">PRIHVATI</button>
       </div>
     </>
   );
