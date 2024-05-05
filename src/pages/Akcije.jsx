@@ -283,8 +283,9 @@ const sortByCity = () => {
 
         </div>
       }
-
+   <br></br>
     </div>
+ 
   );
 }
 

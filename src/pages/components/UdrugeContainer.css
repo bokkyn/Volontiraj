@@ -1,19 +1,19 @@
 .udruga-container {
   background-color: rgb(9, 88, 24);
-  width: 300px;
+  width: 180px;
   height: 200px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-content: flex-end;
 }
 
 .user-info h2 {
   font-weight: bold;
   margin-bottom: 5px;
   width: 100%;
-  text-overflow: ellipsis; 
   white-space: nowrap; 
 }
 

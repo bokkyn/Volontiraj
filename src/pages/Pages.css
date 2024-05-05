@@ -56,6 +56,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 5px;
 
 }
 
@@ -111,6 +112,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+
+
 }
 
 .opsirnije-button, .sortiraj-button {
