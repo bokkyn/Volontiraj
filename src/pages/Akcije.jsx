@@ -180,7 +180,8 @@ const sortByCity = () => {
     <div className="home-container">
        <Parallaxx naslov="AKCIJE!" ratio="4/1" image={jedan}></Parallaxx>
       <div className="header">
-        <h1>Akcije</h1>
+        <br></br>
+        <p className='news-container'>Pogledajte "Više" kako bi saznali više podataka o akciji, kao i prijavljene volontere. Administrator može dodavati volontere u akcije.</p>
       </div>
       <div className='opcije'>
         <button onClick={SortByTime} className='sortiraj-button' >Sortiraj po datumu</button>
@@ -224,7 +225,9 @@ const sortByCity = () => {
                     <p>{akcija.akcija.volonteri.join(', ')}</p>
                   </div>
                   <p>ORGANIZATOR: {akcija.akcija.organizator} </p>
-                  <select
+
+
+               {(userType=="admin") && <div>  <select
               value={value}
               onChange={(e) => setValue(e.target.value)}
               style={{ width: '200px' }}
@@ -234,8 +237,11 @@ const sortByCity = () => {
                 <option key={item.id}>{`${item.volonter.ime} ${item.volonter.prezime}`}</option>
               ))}
             </select>
-            <button onClick={() => addVolunteer(akcija.id, value)} className='sortiraj-button'>DODAJ VOLONTERA</button>
-                </div>
+            <button onClick={() => addVolunteer(akcija.id, value)} className='sortiraj-button'>DODAJ VOLONTERA</button> </div>
+          }
+            </div>
+
+           
               )}
             </Popup>
           </AkcijaContainer>

@@ -153,7 +153,7 @@ function Udruge() {
   return (
     <div className="home-container">
       
-      <Parallaxx naslov="UDRUGE" ratio="4/1" image={image}></Parallaxx>
+      <Parallaxx naslov="UDRUGE!" ratio="4/1" image={image}></Parallaxx>
       
       <Popup
     trigger={open => (
