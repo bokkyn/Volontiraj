@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CountUp from 'react-countup';
+import "./Counter.css"
 
 function Counter(props) {
   const [count, setCount] = useState(0);
@@ -19,7 +20,7 @@ function Counter(props) {
   return (
     <div className="home-container">
       <div className="header">
-        <p>
+        <p className="counter-text">
           {props.name}: <CountUp end= {count} />
 
         </p>

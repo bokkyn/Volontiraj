@@ -1,26 +1,46 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Container from "./Container";
 import dva from "./assets/2.jpg"
 import jedan from "./assets/1.png"
 import tri from "./assets/3.jpg"
 import cetiri from "./assets/4.jpg"
 import "./CenterMode.css"
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 function CenterMode() {
-  const settings = {
-    className: "center",
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 3,
-    speed: 500
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
   };
   return (
     <div className="slider-container">
-      <Slider {...settings}>
+      <Carousel responsive={responsive} swipeable={false}
+  draggable={false}
+  showDots={true}
+  infinite={true}
+  autoPlaySpeed={1000}
+  keyBoardControl={true}
+  customTransition="all .5"
+  transitionDuration={500}
+  containerClass="carousel-container"
+  removeArrowOnDeviceType={["tablet", "mobile"]}
+  dotListClass="custom-dot-list-style"
+  itemClass="carousel-item-padding-40-px">
         <div>
         <Container image={jedan} naslov="Kako Volontiranje Utječe na Psihološko Blagostanje" tekst="Volontiranje je čin altruizma koji ima dubok i višestruki utjecaj na psihološko blagostanje pojedinca. Kroz svoju sposobnost da pomogne drugima ili doprinese zajednici, volontiranje može pozitivno utjecati na mentalno zdravlje pojedinca na različitim razinama.
 
@@ -49,7 +69,7 @@ Aplikacije za mobilne uređaje često nude korisnicima jednostavan pristup infor
         <div>
         <Container image={cetiri} naslov="Dobrovoljni Rad Povezuje Različite Generacije" tekst="Volontiranje je aktivnost koja povezuje ljude svih uzrasta i generacija. Dobrovoljni rad povezuje različite generacije kroz zajedničku svrhu i aktivnosti. Kroz volontiranje, mladi i stariji ljudi mogu dijeliti iskustva, učiti jedni od drugih i izgraditi međugeneracijsko razumijevanje i poštovanje. Ova međusobna interakcija doprinosi jačanju zajednice i promicanju solidarnosti među generacijama."></Container>
         </div>
-      </Slider>
+      </Carousel>
     </div>
   );
 }

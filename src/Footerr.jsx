@@ -7,8 +7,9 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section">
           <h2 className="site-title">Volontiraj!</h2>
+          <p className='sredina'>Stranica za volontere SDŽ.</p>
         </div>
-        <p className='sredina'>Stranica za volontere SDŽ.</p>
+        
         <div className="footer-section">
           <ul className="footer-nav">
             <li><a href="#">BOkkYN</a></li>

@@ -171,12 +171,11 @@ const filterByZanimacija = (zanimacija) => {
       </div>
       <div className="search">
       <div className="filter-zanimacija">
-        <span>Filter:</span>
         <select
           value={selectedZanimacija}
           onChange={(e) => filterByZanimacija(e.target.value)}
         >
-          <option value="">All</option>
+          <option value="">Svi</option>
           {zanimacije.map(zanimacija => (
             <option key={zanimacija.id} value={zanimacija.zanimacija.ime}>
               {zanimacija.zanimacija.ime}
@@ -186,8 +185,8 @@ const filterByZanimacija = (zanimacija) => {
         </select>
       </div>
       <div className='opcije'>
-          <button onClick={sortBySurname}>Sortiraj po prezimenu {sortOrder.surname === 'asc' ? '▲' : '▼'}</button>
-          <button onClick={sortByCity}>Sortiraj po mjestu {sortOrder.city === 'asc' ? '▲' : '▼'}</button>
+          <button onClick={sortBySurname}>Sortiraj po prezimenu</button>
+          <button onClick={sortByCity}>Sortiraj po mjestu</button>
         
       
         <input
@@ -223,12 +222,6 @@ const filterByZanimacija = (zanimacija) => {
       onChange={(event, newValue) => handleRatingChange(volonter.id, newValue)} 
       precision={0.5}
       disabled={userType !== 'admin'}/>
-
-    
-
- 
-
-
 
 
               <br></br>
@@ -281,7 +274,7 @@ const filterByZanimacija = (zanimacija) => {
             onChange={handleChange}
             required
           >
-            <option value=''>--Odaberi mjesto--</option>
+            <option value=''> Odaberi mjesto </option>
             {mjesta.map(mjesto => (
               <option key={mjesto.id} value={mjesto.mjesto.ime}>
                 {mjesto.mjesto.ime}
@@ -296,7 +289,7 @@ const filterByZanimacija = (zanimacija) => {
             onChange={handleChange}
             required
           >
-            <option value=''>--Odaberi zanimaciju--</option>
+            <option value=''> Odaberi zanimaciju </option>
             {zanimacije.map(zanimacija => (
               <option key={zanimacija.id} value={zanimacija.zanimacija.ime}>
                 {zanimacija.zanimacija.ime}

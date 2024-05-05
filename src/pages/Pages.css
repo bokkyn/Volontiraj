@@ -108,42 +108,59 @@
   align-items: center;
 }
 
-
-.opsirnije-button{
-  position: relative;
+.opsirnije-button {
+  --color: #560bad;
+  font-family: inherit;
   display: inline-block;
-  padding: 2px 3px;
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: white;
-  background: #FFA500;
-  cursor: pointer;
-  transition: ease-out 0.5s;
-  border: 2px solid #228B22;
-  border-radius: 4px;
-  box-shadow: inset 0 0 0 0 aqua;
-}
-
-.opsirnije-button:hover {
-  color: #228B22;
-  background: #FFD700;
-  box-shadow: inset 0 -100px 0 0 #228B22;
-}
-
-.opsirnije-button:active {
-  transform: scale(0.9);
-}
-
-
-
-
+  width: 60px;
+  height: auto;
+  line-height: 1.5em;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 16px;
+  margin: 2px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+ }
+ 
+ .opsirnije-button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ .opsirnije-button:hover {
+  color: #fff;
+ }
+ 
+ .opsirnije-button:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ .opsirnije-button:hover:before {
+  top: -30px;
+  left: -30px;
+ }
+ 
+ .opsirnije-button:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+ }
 
 
  
  .add-volonter-form, .add-akcija-form {
-  background-color: orange;
+  background: linear-gradient(to bottom, orange, #8b682c);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -194,6 +211,10 @@
   display: flex;
   align-items: center;
   gap: 50px;
+}
+
+.opcije button{
+  background-color: #28a745;
 }
 
 

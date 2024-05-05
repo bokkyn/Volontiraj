@@ -178,8 +178,8 @@ const sortByCity = () => {
         <h1>Akcije</h1>
       </div>
       <div className='opcije'>
-        <button onClick={SortByTime}>Poredaj po datumu {sortOrder.pocetak === 'asc' ? '▲' : '▼'}</button>
-        <button onClick={sortByCity}>Poredaj po gradu {sortOrder.city === 'asc' ? '▲' : '▼'}</button>
+        <button onClick={SortByTime}>Poredaj po datumu</button>
+        <button onClick={sortByCity}>Poredaj po gradu</button>
       
       <div className="search">
         <input
