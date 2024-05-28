@@ -109,18 +109,6 @@
       "ocjena": 4
     },
     {
-      "id": "0073",
-      "volonter": {
-        "ime": "Antonio",
-        "prezime": "Ćelić",
-        "mjesto": "Sućuraj",
-        "zanimacija": "Okoliš",
-        "mail": "ludiantonio@gmail.com",
-        "spol": "M"
-      },
-      "ocjena": 2.5
-    },
-    {
       "id": "0f37",
       "volonter": {
         "ime": "Martin",
