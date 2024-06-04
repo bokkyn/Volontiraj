@@ -61,3 +61,4 @@ Za prijavu kao admin, koristite sljedeće podatke:
 
 - [BOkkYN](https://github.com/bokkyn)
 
+Nije baš responzivno, smola.
